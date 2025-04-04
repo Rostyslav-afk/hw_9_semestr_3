@@ -17,12 +17,31 @@ console.log(logItems(['Mango', 'Poly', 'Ajax']));
 //#2 Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
 console.log("!!!2 Завдання!!!");
 
-function calculateEngravingPrice(message, pricePerWord) { 
-    const abc = message.split(" "); 
+function calculateEngravingPrice(message, pricePerWord) {
+    const abc = message.split(" ");
     // console.log(message);
     // console.log(pricePerWord);
     // console.log(abc.length);
-    
+
     return abc.length * pricePerWord
 }
-console.log(calculateEngravingPrice("Lorem ipsum dolor sit amet consectetur adipisicing elit ", 200)); 
+console.log(calculateEngravingPrice("Lorem ipsum dolor sit amet consectetur adipisicing elit ", 200));
+
+//#3 Напиши функцію findLongestWord(string), яка приймає параметром довільний рядок (в рядку будуть тільки слова і прогалини) і повертає найдовше слово в цьому рядку.
+console.log("!!!3 Завдання!!!");
+
+function findLongestWord(string) {
+    let i = "";
+    const somme = res[0];
+    const res = string.split(" ")
+
+    for (let i = 0; i <= res.length; i += 1) {
+        console.log(res[i]);
+        if (res[i] < somme) {
+            somme = res[i]
+        }
+    }
+    return somme;
+}
+
+console.log(findLongestWord("Esse quibusdam cum veniam quia eveniet ducimus rerum ratione facilis labore quasi"));
