@@ -14,3 +14,15 @@ function logItems(array) {
 }
 console.log(logItems(['Mango', 'Poly', 'Ajax']));
 
+//#2 Напиши скрипт підрахунку вартості гравіювання прикрас. Для цього створи функцію calculateEngravingPrice(message, pricePerWord) приймаючу рядок (в рядку будуть тільки слова і прогалини) і ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
+console.log("!!!2 Завдання!!!");
+
+function calculateEngravingPrice(message, pricePerWord) { 
+    const abc = message.split(" "); 
+    // console.log(message);
+    // console.log(pricePerWord);
+    // console.log(abc.length);
+    
+    return abc.length * pricePerWord
+}
+console.log(calculateEngravingPrice("Lorem ipsum dolor sit amet consectetur adipisicing elit ", 200)); 
