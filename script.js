@@ -70,7 +70,7 @@ console.log("!!!5 Завдання!!!");
 function checkForSpam(message){
     const checkMessage = message.toLowerCase();
 
-    if (checkMessage.includes("spam")){
+    if (checkMessage.includes("spam") || checkMessage.includes("sale")){
         return true
     } else {
         return false
